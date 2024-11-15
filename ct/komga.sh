@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/DysfunctionalProgramming/ProxmoxVE/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/DysfunctionalProgramming/ProxmoxVE/refs/heads/komga/misc/build.func)
 # Copyright (c) 2024 madelyn
 # Author: madelyn (DysfunctionalProgramming)
 # License: MIT
