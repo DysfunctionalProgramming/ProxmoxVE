@@ -23,7 +23,7 @@ RELEASE=$(curl -s https://api.github.com/repos/gotson/komga/releases/latest | gr
 
 msg_info "Installing Komga"
 wget -q https://github.com/gotson/komga/releases/download/${RELEASE}/komga-${RELEASE}.jar
-mv https://github.com/gotson/komga/releases/download/${RELEASE}/komga-${RELEASE}.jar /opt/komga
+mv komga-${RELEASE}.jar /opt/komga/komga-${RELEASE}.jar
 msg_ok "Installed Komga 😊"
 
 msg_info "Creating Service"
