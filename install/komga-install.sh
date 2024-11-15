@@ -24,7 +24,7 @@ RELEASE=$(curl -s https://api.github.com/repos/gotson/komga/releases/latest | gr
 msg_info "Installing Komga"
 wget -q https://github.com/gotson/komga/releases/download/${RELEASE}/komga-${RELEASE}.jar
 mv https://github.com/gotson/komga/releases/download/${RELEASE}/komga-${RELEASE}.jar /opt/komga
-msg_ok "Installed TriliumNext"
+msg_ok "Installed Komga 😊"
 
 msg_info "Creating Service"
 service_path="/etc/systemd/system/komga.service"
