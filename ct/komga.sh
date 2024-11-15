@@ -61,7 +61,8 @@ if [[ ! -d /opt/komga/komga-${RELEASE}.jar ]]; then
   systemctl stop komga
   msg_info "Downloading ${APP} v$RELEASE"
   wget -q "https://github.com/gotson/komga/releases/download/v$RELEASE/komga-${RELEASE}.jar"
-  mv komga-${RELEASE}.jar /opt/komga/komga-${RELEASE}.jar
+  mkdir -p /opt/komga
+  mv -f komga-${RELEASE}.jar /opt/komga/komga-${RELEASE}.jar
   systemctl start komga
 fi
 msg_ok "Updated ${APP} to v$RELEASE"
