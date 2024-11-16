@@ -43,7 +43,7 @@ Restart=on-failure
 WantedBy=multi-user.target
 EOF
 systemctl -q daemon-reload
-systemctl enable --now -q prowlarr
+systemctl enable --now -q komga
 msg_ok "Created Service"
 
 motd_ssh
